@@ -7,13 +7,13 @@
 <head>
 <meta http-equiv="pragma" content="no-cache" />
 <meta http-equiv="cache-control" content="no-cache" />
-<meta http-equiv="expires" content="0" /> 
-<meta name="format-detection" content="telephone=no" />  
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+<meta http-equiv="expires" content="0" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta name="format-detection" content="telephone=no" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>订单结算页 -宜立方商城</title>
-<!--结算页面样式-->	
+<title>订单结算页 -凯猫商城</title>
+<!--结算页面样式-->
 <link rel="stylesheet" type="text/css" href="/css/jquery.alerts.css?v=20160713" />
 <link rel="stylesheet" type="text/css" href="/css/head.css?v=20160713" />
 <link rel="stylesheet" type="text/css" href="/css/order.css?v=20160713">
@@ -25,7 +25,7 @@
 <script src="/js/common.js?v=20160713" type="text/javascript"></script>
 <script src="/js/jquery.region.js?v=20160713" type="text/javascript"></script>
 <script src="/js/order.js?v=20160713" type="text/javascript"></script>
-</head>	
+</head>
 <body id="mainframe">
 <jsp:include page="commons/header.jsp" />
 <div class="orderMain">
@@ -73,7 +73,7 @@
 					<span class="tOrder" na="chai1">订单1</span>
 					<div class="sOrders">
 						<div class="scon">
-							<strong>宜立方速运</strong>负责配送。<br>商品下单后尽快为您发货
+							<strong>凯猫速运</strong>负责配送。<br>商品下单后尽快为您发货
 						</div>
 					</div>
 					<span class="clear"></span>
@@ -137,7 +137,7 @@
 					<div class="pItem pInventory" pid="57111">现货</div>
 					<div class="pItem pQuantity">${cart.num}</div>
 					<div class="pItem pWeight">0.72kg</div>
-					<div class="pItem pSubtotal">¥${cart.price / 100 * cart.num}</div> 
+					<div class="pItem pSubtotal">¥${cart.price / 100 * cart.num}</div>
 					<span class="clear"></span>
 				</div>
 				</c:forEach>
@@ -175,7 +175,7 @@
   </div>
   </div>
   <div class="orderTFoot">
-  	<div id="orderSaveTip" class="ct"></div>            
+  	<div id="orderSaveTip" class="ct"></div>
     <div class="submitOrder">
       <div class="orderSubmit">
       	<input id="save" name="save" onclick="$('#orderForm').submit()" class="submitBtn" value="提交订单 " type="button"/>
