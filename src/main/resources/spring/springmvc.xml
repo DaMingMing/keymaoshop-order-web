@@ -27,7 +27,13 @@
 
 	<context:component-scan base-package="com.keymao.order.controller" />
 
-
+    <!-- 拦截器配置 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.keymao.order.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
 
 	<!--整合jsp-->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
