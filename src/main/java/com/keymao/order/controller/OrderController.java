@@ -5,6 +5,9 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.keymao.common.utils.E3Result;
+import com.keymao.order.pojo.OrderInfo;
+import com.keymao.order.service.OrderService;
 import com.keymao.pojo.TbItem;
 import com.keymao.pojo.TbUser;
 import com.keymaoshop.cart.service.CartService;
@@ -24,10 +27,8 @@ public class OrderController {
 	
 	@Autowired
 	private CartService cartService;
-/*
 	@Autowired
 	private OrderService orderService;
-*/
 
 	@RequestMapping("/order/order-cart")
 	public String showOrderCart(HttpServletRequest request) {
@@ -45,7 +46,7 @@ public class OrderController {
 		return "order-cart";
 	}
 	
-/*	@RequestMapping(value="/order/create", method=RequestMethod.POST)
+	@RequestMapping(value="/order/create", method=RequestMethod.POST)
 	public String createOrder(OrderInfo orderInfo, HttpServletRequest request) {
 		//取用户信息
 		TbUser user = (TbUser) request.getAttribute("user");
@@ -64,5 +65,5 @@ public class OrderController {
 		request.setAttribute("payment", orderInfo.getPayment());
 		//返回逻辑视图
 		return "success";
-	}*/
+	}
 }
