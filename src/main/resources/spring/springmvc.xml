@@ -22,6 +22,7 @@
 <!--	<dubbo:reference interface="com.keymao.service.ItemService" id="itemService"/>-->
 	<dubbo:reference interface="com.keymaoshop.sso.service.TokenService" id="tokenService"/>
 	<dubbo:reference interface="com.keymaoshop.cart.service.CartService" id="cartService"/>
+	<dubbo:reference interface="com.keymao.order.service.OrderService" id="orderService"/>
 
 
 
